@@ -11,8 +11,10 @@ html {
   }
 }
 
+
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
+
 }
 
 .container {
@@ -24,10 +26,199 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
+}
+
+/* //////////////////////////////////// form style */
+
+
+/* html{
+  background:url(https://www.cnet.com/a/img/resize/a6b4d6fc477ca85946c288fc2944e01358ea5c77/hub/2022/10/30/9cb9dc86-2004-4e99-8a6c-cdadade7bcb3/mariorabbids.jpg?auto=webp&fit=crop&height=675&width=1200) no-repeat;
+  background-size: cover;
+  height:100%;
+  background-color: #000;
+}
+* {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+
+  text-rendering:optimizeLegibility;
+}
+body {
+  color: #C0C0C0;
+  font-family: Arial, san-serif;
+} */
+
+
+/* Contact Form Styles */
+h1 {
+  margin: 10px 0 0 0;
+}
+h4{
+  margin: 0 0 20px 0;
+}
+#contact-form {
+  background:url(https://www.cnet.com/a/img/resize/a6b4d6fc477ca85946c288fc2944e01358ea5c77/hub/2022/10/30/9cb9dc86-2004-4e99-8a6c-cdadade7bcb3/mariorabbids.jpg?auto=webp&fit=crop&height=675&width=1200) no-repeat;
+  /* background-color:#991D57; */
+  padding: 10px 20px 30px 20px;
+  max-width:100%;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top:30px;
+  height: 100%;
+  margin-left: -260px;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+}
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea,   
+#contact-form label { 
+  font-size: 15px;  
+  margin-bottom: 2px;
+  font-family: Arial, san-serif;
+} 
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea { 
+  width:100%;
+  background: #fff;
+  border: 0; 
+  -moz-border-radius: 4px;  
+  -webkit-border-radius: 4px;  
+  border-radius: 4px;
+  margin-bottom: 25px;  
+  padding: 5px;  
+}  
+#contact-form input:focus,   
+#contact-form select:focus,   
+#contact-form textarea:focus {  
+  background-color: #E5E6E7; 
+}  
+#contact-form textarea {
+  width:100%;
+  height: 100px;
+}
+#contact-form button[type="submit"] {
+  cursor:pointer;
+  width:100%;
+  border:none;
+  background:#991D57;
+  background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  color:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+  border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+  background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+  background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+  background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+  box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+input:required, textarea:required {  
+  box-shadow: none;
+  -moz-box-shadow: none;  
+  -webkit-box-shadow: none;  
+  -o-box-shadow: none;  
+} 
+#contact-form .required {  
+  font-weight:bold;  
+  color: #E5E6E7;      
+}
+
+/* Hide success/failure message
+  (especially since the php is missing) */
+#failure, #success {
+  color: #6EA070; 
+  display:none;  
+}
+
+/* Make form look nice on smaller screens */
+@media only screen and (max-width: 580px) {
+  #contact-form{
+     left: 3%;
+     margin-right: 3%;
+     width: 88%;
+     margin-left: 0;
+     padding-left: 3%;
+     padding-right: 3%;
+  }
+}
+
+/* ///////////////////////////////////////  card style*/
+
+body {
+  text-align: center;
+  padding: 30px;
+  background: #f8f4f2;
+  font-family: Arial;
+}
+
+.a-box {
+  
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
+
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    margin: -35px 0px 0px -70px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 200px;
+}
+
+.text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
 }

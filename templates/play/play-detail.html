@@ -1,0 +1,30 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+{% comment %} <h2>Details about {{ play.name }}</h2>
+<h2>Purchaser: {{ play.purchaser.first_name }} {{ play.purchaser.last_name }}</h2>
+<p>{{ play.desc }}</p>
+<img src={{play.img}} alt=""  /> {% endcomment %}
+{% comment %} <a href="{% url 'play_update' play.pk %}"> Update Play</a>
+<a href="{% url 'play_delete' play.pk %}"> Delete Play</a> {% endcomment %}
+{% comment %} ///////////////////////////////////////////// {% endcomment %}
+
+<div class="a-box" >
+    <div class="img-container">
+      <div class="img-inner">
+        <div class="inner-skew">
+            <img src={{play.img}} alt=""  />
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <h3>{{ play.name }}</h3>
+      <div>
+        <p>{{ play.desc }}</p>
+        <a href="{% url 'play_update' play.pk %}" class="btn btn-outline-secondary"> Update Play</a>
+        <a href="{% url 'play_delete' play.pk %}" class="btn btn-primary ml-2"> Delete Play</a>
+    </div>
+  </div>
+
+{% endblock content %}

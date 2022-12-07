@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form method="post" class="uniForm">
+  {% csrf_token %}
+  {% comment %} {{ form|crispy }}
+  <input type="submit" value="SAVE"> {% endcomment %}
+  <style>
+    h2{
+      color: #991D57;
+      display:fixed:
+      text-align: center;
+      margin: auto;
+      font-family: 'Lexend Deca', sans-serif;
+    }
+  </style>
+  {% comment %} ??????????????? {% endcomment %}
+
+  <div id="contact-form">
+    <div>
+      <h2 >Update Paly</h2>
+      </div>
+      
+         <form method="post" >
+          {{ form|crispy }}
+        
+        <div>      
+            <button name="submit" type="submit" id="submit" value="SAVE">SAVE</button> 
+        </div>
+         </form>
+  
+    </div>
+</form>
+{% endblock content %}
